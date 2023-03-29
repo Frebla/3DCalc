@@ -4,7 +4,7 @@
             return {
                 SampleList: [],
                 PlasticList: [],
-                DifficultyList: [],
+                modelHours: 1,
                 selectedType: 1,
                 selectedPlastic: 1,
                 difficult: 1,
@@ -23,7 +23,6 @@
                 debugger;
                 self.SampleList = response.sampleList;
                 self.PlasticList = response.plasticList;
-                self.DifficultyList = response.difficultyList;
             });
         },
         methods: {
@@ -31,7 +30,7 @@
                 let dto = {
                     type: this.selectedType,
                     plastic: this.selectedPlastic,
-                    difficult: this.difficult,
+                    modelHours: this.modelHours,
                     sizeL: this.sizeL,
                     sizeW: this.sizeW,
                     sizeD: this.sizeD,

@@ -4,10 +4,9 @@
             return {
                 SampleList: [],
                 PlasticList: [],
-                DifficultyList: [],
+                ModelHourCost: 0,
                 selectedType: 1,
                 selectedPlastic: 1,
-                difficult: 1,
                 Password: "",
                 PrinterHourCost: 0
             }
@@ -17,9 +16,9 @@
             $.get(appPath + 'Home/GetSettings', {}, function (response) {
                 self.SampleList = response.sampleList;
                 self.PlasticList = response.plasticList;
-                self.DifficultyList = response.difficultyList;
                 self.PrinterHourCost = response.printerHourCost;
                 self.Password = response.password;
+                self.ModelHourCost = response.modelHourCost
             });
         },
         methods: {
@@ -33,7 +32,7 @@
                 let dto = {
                     sampleList: this.SampleList,
                     plasticList: this.PlasticList,
-                    DifficultyList: this.DifficultyList,
+                    modelHourCost: this.ModelHourCost,
                     printerHourCost: this.PrinterHourCost,
                     password: this.Password
                 };

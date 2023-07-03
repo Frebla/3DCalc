@@ -2,9 +2,10 @@
     const app = Vue.createApp({
         data() {
             return {
-                SampleList: [],
                 PlasticList: [],
+                PrinterList: [],
                 ModelHourCost: 0,
+                PrintHourCost: 0,
                 selectedType: 1,
                 selectedPlastic: 1,
                 Password: "",
@@ -14,9 +15,9 @@
         mounted() {
             let self = this;
             $.get(appPath + 'Home/GetSettings', {}, function (response) {
-                self.SampleList = response.sampleList;
                 self.PlasticList = response.plasticList;
-                self.PrinterHourCost = response.printerHourCost;
+                self.PrinterList = response.printerList;
+                self.PrintHourCost = response.printHourCost;
                 self.Password = response.password;
                 self.ModelHourCost = response.modelHourCost
             });
@@ -30,10 +31,10 @@
                 bootbox.alert('Save!');
                 debugger;
                 let dto = {
-                    sampleList: this.SampleList,
                     plasticList: this.PlasticList,
+                    printerList: this.PrinterList,
                     modelHourCost: this.ModelHourCost,
-                    printerHourCost: this.PrinterHourCost,
+                    printHourCost: this.PrintHourCost,
                     password: this.Password
                 };
                 let self = this;

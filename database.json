@@ -1,1 +1,130 @@
-{"PlasticList":[{"Id":1,"Name":"PETG","Cost":6,"Performance":50},{"Id":2,"Name":"PA","Cost":10,"Performance":10},{"Id":3,"Name":"PLA","Cost":6,"Performance":50},{"Id":4,"Name":"TPU","Cost":12,"Performance":7},{"Id":5,"Name":"ABS","Cost":6,"Performance":30},{"Id":6,"Name":"ABS GF","Cost":10,"Performance":15},{"Id":7,"Name":"PP GF","Cost":10,"Performance":15},{"Id":8,"Name":"PA GF","Cost":15,"Performance":15},{"Id":9,"Name":"TPU GF","Cost":20,"Performance":15},{"Id":10,"Name":"PA CF","Cost":20,"Performance":10},{"Id":11,"Name":"PPO/PPE","Cost":25,"Performance":10}],"PrinterList":[{"Id":1,"Name":"Ender 3","Cost":135},{"Id":2,"Name":"Vostok","Cost":350},{"Id":3,"Name":"Ulti","Cost":230},{"Id":4,"Name":"Chiron","Cost":135},{"Id":5,"Name":"Ghost","Cost":250}],"PrintHourCost":1000,"ModelHourCost":500,"Password":"111"}
+{
+  "TypeList": [
+    {
+      "Id": 1,
+      "Name": "Простой"
+    },
+    {
+      "Id": 2,
+      "Name": "Сложный"
+    }
+  ],
+  "PlasticList": [
+    {
+      "Id": 1,
+      "Name": "PETG",
+      "Cost": 3,
+      "Performance": 50
+    },
+    {
+      "Id": 2,
+      "Name": "PA",
+      "Cost": 6,
+      "Performance": 10
+    },
+    {
+      "Id": 3,
+      "Name": "PLA",
+      "Cost": 3,
+      "Performance": 50
+    },
+    {
+      "Id": 4,
+      "Name": "TPU",
+      "Cost": 6,
+      "Performance": 7
+    },
+    {
+      "Id": 5,
+      "Name": "ABS",
+      "Cost": 3,
+      "Performance": 30
+    },
+    {
+      "Id": 6,
+      "Name": "ABS GF",
+      "Cost": 5,
+      "Performance": 15
+    },
+    {
+      "Id": 7,
+      "Name": "PP GF",
+      "Cost": 6,
+      "Performance": 15
+    },
+    {
+      "Id": 8,
+      "Name": "PA GF",
+      "Cost": 8,
+      "Performance": 15
+    },
+    {
+      "Id": 9,
+      "Name": "TPU GF",
+      "Cost": 8,
+      "Performance": 15
+    },
+    {
+      "Id": 10,
+      "Name": "PA CF",
+      "Cost": 12,
+      "Performance": 10
+    },
+    {
+      "Id": 11,
+      "Name": "PPO/PPE",
+      "Cost": 12,
+      "Performance": 10
+    }
+  ],
+  "PrinterList": [
+    {
+      "Id": 1,
+      "Name": "Ender 3",
+      "Cost": 135
+    },
+    {
+      "Id": 2,
+      "Name": "Ender 3 Pro",
+      "Cost": 135
+    },
+    {
+      "Id": 3,
+      "Name": "Ulti Steel",
+      "Cost": 230
+    },
+    {
+      "Id": 4,
+      "Name": "Ulti Steel 2",
+      "Cost": 230
+    },
+    {
+      "Id": 5,
+      "Name": "Ghost 5",
+      "Cost": 250
+    },
+    {
+      "Id": 6,
+      "Name": "Chiron",
+      "Cost": 135
+    },
+    {
+      "Id": 7,
+      "Name": "Zav",
+      "Cost": 250
+    },
+    {
+      "Id": 8,
+      "Name": "Vostok",
+      "Cost": 350
+    },
+    {
+      "Id": 9,
+      "Name": "Photon M3",
+      "Cost": 300
+    }
+  ],
+  "PrintHourCost": 1000,
+  "ModelHourCost": 1000,
+  "Password": "111"
+}

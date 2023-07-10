@@ -2,6 +2,7 @@
     const app = Vue.createApp({
         data() {
             return {
+                TypeList: [],
                 PlasticList: [],
                 PrinterList: [],
                 ModelHourCost: 0,
@@ -20,6 +21,7 @@
                 self.PrintHourCost = response.printHourCost;
                 self.Password = response.password;
                 self.ModelHourCost = response.modelHourCost
+                self.TypeList = response.typeList;
             });
         },
         methods: {
@@ -35,7 +37,8 @@
                     printerList: this.PrinterList,
                     modelHourCost: this.ModelHourCost,
                     printHourCost: this.PrintHourCost,
-                    password: this.Password
+                    password: this.Password,
+                    typeList: this.TypeList
                 };
                 let self = this;
                 $.post(appPath + 'Home/SaveSettings', dto, function (response) {
